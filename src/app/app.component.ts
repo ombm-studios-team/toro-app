@@ -29,7 +29,9 @@ export class AppComponent implements OnInit {
       .getPopulationInfo()
         .subscribe(
           data => this.dataSource = data,
-          error => console.log(error)
+          error => {
+            throw Error(error)
+          }
         );
   }
 }

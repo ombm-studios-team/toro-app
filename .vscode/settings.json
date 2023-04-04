@@ -41,5 +41,6 @@
     ".angular/cache",
     ".angular"
   ],
-  "conventionalCommits.scopes": ["services", "global"]
+  "conventionalCommits.scopes": ["services", "global"],
+  "cSpell.words": ["ipopulation"]
 }
