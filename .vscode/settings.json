@@ -21,7 +21,10 @@
     "src/index.html": true,
     "src/styles.css": true,
     "src/app/services/population.service.spec.ts": true,
-    "src/app/app.component.spec.ts": true
+    "src/app/app.component.spec.ts": true,
+    ".angular/cache/15.2.4": true,
+    ".angular/cache": true,
+    ".angular": true
   },
   "hide-files.files": [
     "node_modules",
@@ -39,7 +42,10 @@
     "src/index.html",
     "src/styles.css",
     "src/app/services/population.service.spec.ts",
-    "src/app/app.component.spec.ts"
+    "src/app/app.component.spec.ts",
+    ".angular/cache/15.2.4",
+    ".angular/cache",
+    ".angular"
   ],
-  "conventionalCommits.scopes": ["services"]
+  "conventionalCommits.scopes": ["services", "global"]
 }

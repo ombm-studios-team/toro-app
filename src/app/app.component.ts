@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { IPopulationInfo } from './models/ipopulation-info';
 import { PopulationService } from './services/population.service';
+
 
 @Component({
   selector: 'app-root',
@@ -7,15 +10,25 @@ import { PopulationService } from './services/population.service';
   styleUrls: ['./app.component.css'],
   providers: [PopulationService],
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'toro-app';
-  dataArray: [] = [];
+  populationList: IPopulationInfo[] = [];
+  dataSource = []; // create a new array
+  displayedColumns: string[] = [
+    'id_nation',
+    'nation',
+    'id_year',
+    'year',
+    'population',
+    'slug_nation',
+  ];
   constructor(private populationService: PopulationService) {}
 
   ngOnInit() {
     this.populationService.getPopulationInfo().subscribe(
       (data) => {
-        this.dataArray = data;
+        this.dataSource = data;
+        console.info(data);
       },
       (error) => {
         console.log('An error accessing Employee Service');

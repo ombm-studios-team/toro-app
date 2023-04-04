@@ -14,17 +14,15 @@ import { IPopulationInfo } from "../models/ipopulation-info";
   providedIn: 'root',
 })
 export class PopulationService {
-  private baseURL = 'https://datausa.io/api';
+  private endpoint =
+    'https://datausa.io/api/data?drilldowns=Nation&measures=Population';
 
   constructor(private http: HttpClient) {}
 
   getPopulationInfo(): Observable<any> {
-    const URL = `${this.baseURL}/data?drilldowns=Nation&measures=Population`;
+    const URL = `${this.endpoint}`;
     return this.http.get<IPopulationInfo>(URL).pipe(
-      map((resp: any) => {
-        resp.data;
-        console.log(resp.data);
-      }),
+      map((resp: any) => resp.data),
       catchError((error) => this.throwError(error))
     );
   }
@@ -36,8 +34,6 @@ export class PopulationService {
       ? (errorMessage = error.error.message)
       : (errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`);
 
-      console.log(errorMessage);
-
-      return throwError(() => errorMessage);
+    return throwError(() => errorMessage);
   }
 }

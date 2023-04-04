@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
+import { MatTableModule } from '@angular/material/table';
+
 import { AppComponent } from './app.component';
 
 import { PopulationService } from './services/population.service';
@@ -11,7 +13,12 @@ import { PopulationTableComponent } from './components/population-table/populati
 
 @NgModule({
   declarations: [AppComponent, PopulationTableComponent],
-  imports: [BrowserModule, BrowserAnimationsModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    MatTableModule
+  ],
   providers: [PopulationService],
   bootstrap: [AppComponent],
 })
