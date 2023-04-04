@@ -25,14 +25,11 @@ export class AppComponent implements OnInit {
   constructor(private populationService: PopulationService) {}
 
   ngOnInit() {
-    this.populationService.getPopulationInfo().subscribe(
-      (data) => {
-        this.dataSource = data;
-        console.info(data);
-      },
-      (error) => {
-        console.log('An error accessing Employee Service');
-      }
-    );
+    this.populationService
+      .getPopulationInfo()
+        .subscribe(
+          data => this.dataSource = data,
+          error => console.log(error)
+        );
   }
 }
