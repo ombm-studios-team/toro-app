@@ -16,8 +16,7 @@ describe('PopulationService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [PopulationService],
-      schemas: [NO_ERRORS_SCHEMA],
+      providers: [PopulationService]
     });
     service = TestBed.inject(PopulationService);
     httpMock = TestBed.inject(HttpTestingController);
