@@ -1,9 +1,14 @@
-import { HttpClient } from '@angular/common/http';
+import {
+  HttpClient,
+  HttpErrorResponse
+} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { catchError } from 'rxjs/operators';
 import { map } from 'rxjs/operators';
-import { Observable,throwError } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
+
+import { IPopulationInfo } from "../models/ipopulation-info";
 
 @Injectable({
   providedIn: 'root',
@@ -15,18 +20,24 @@ export class PopulationService {
 
   getPopulationInfo(): Observable<any> {
     const URL = `${this.baseURL}/data?drilldowns=Nation&measures=Population`;
-    // return this.http.get<IPopulationInfos>(URL);
-    return this.http.get(URL).pipe(
-      map((resp: any) =>{
-        resp.json();
-        console.log("Population INFO:" + resp.json())
+    return this.http.get<IPopulationInfo>(URL).pipe(
+      map((resp: any) => {
+        resp.data;
+        console.log(resp.data);
       }),
       catchError((error) => this.throwError(error))
     );
   }
 
-  throwError(error: any) {
-    console.error(error);
-    return throwError(error.json().error || 'Server error');
+  // Handle Errors
+  throwError(error: HttpErrorResponse) {
+    let errorMessage = '';
+    error.error instanceof ErrorEvent
+      ? (errorMessage = error.error.message)
+      : (errorMessage = `Error Code: ${error.status}\nMessage: ${error.message}`);
+
+      console.log(errorMessage);
+
+      return throwError(() => errorMessage);
   }
 }

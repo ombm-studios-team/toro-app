@@ -20,7 +20,8 @@
     ".editorconfig": true,
     "src/index.html": true,
     "src/styles.css": true,
-    "src/app/services/population.service.spec.ts": true
+    "src/app/services/population.service.spec.ts": true,
+    "src/app/app.component.spec.ts": true
   },
   "hide-files.files": [
     "node_modules",
@@ -37,6 +38,8 @@
     ".editorconfig",
     "src/index.html",
     "src/styles.css",
-    "src/app/services/population.service.spec.ts"
-  ]
+    "src/app/services/population.service.spec.ts",
+    "src/app/app.component.spec.ts"
+  ],
+  "conventionalCommits.scopes": ["services"]
 }

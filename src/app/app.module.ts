@@ -6,11 +6,12 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 import { PopulationService } from './services/population.service';
+import { PopulationTableComponent } from './components/population-table/population-table.component';
 
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, BrowserAnimationsModule],
+  declarations: [AppComponent, PopulationTableComponent],
+  imports: [BrowserModule, BrowserAnimationsModule, HttpClientModule],
   providers: [PopulationService],
   bootstrap: [AppComponent],
 })
