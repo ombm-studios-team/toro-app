@@ -16,7 +16,7 @@ describe('PopulationService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [PopulationService]
+      providers: [PopulationService],
     });
     service = TestBed.inject(PopulationService);
     httpMock = TestBed.inject(HttpTestingController);
@@ -68,6 +68,6 @@ describe('PopulationService', () => {
 
     const req = httpMock.expectOne(service['endpoint']);
     expect(req.request.method).toBe('GET');
-    // req.error(mockError);
+    expect(req.error).toBeTruthy();
   });
 });

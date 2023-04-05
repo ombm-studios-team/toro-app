@@ -44,3 +44,4 @@ Thumbs.db
 .angular\cache\15.2.4
 .angular
 .vscode/settings.json\
+.eslintcache

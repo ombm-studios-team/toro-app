@@ -1,7 +1,4 @@
-import {
-  NO_ERRORS_SCHEMA,
-  CUSTOM_ELEMENTS_SCHEMA,
-} from '@angular/core';
+import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
@@ -116,7 +113,7 @@ describe('AppComponent', () => {
         Year: '2020',
         Population: 326569308,
         'Slug Nation': 'united-states',
-      }
+      },
     ];
     jest
       .spyOn(populationService, 'getPopulationInfo')

@@ -1,14 +1,11 @@
-import {
-  HttpClient,
-  HttpErrorResponse
-} from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 import { catchError } from 'rxjs/operators';
 import { map } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
 
-import { IPopulationInfo } from "../models/ipopulation-info";
+import { IPopulationInfo } from '../models/ipopulation-info';
 
 @Injectable({
   providedIn: 'root',
