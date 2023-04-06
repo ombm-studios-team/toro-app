@@ -45,3 +45,5 @@ Thumbs.db
 .angular
 .vscode/settings.json\
 .eslintcache
+
+storybook-static
