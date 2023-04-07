@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>toro-app documentation</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/dark.css" />
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top visible-xs">
+      <a href="../" class="navbar-brand">toro-app documentation</a>
+      <button
+        type="button"
+        class="btn btn-default btn-menu ion-ios-menu"
+        id="btn-menu"
+      ></button>
+    </div>
+
+    <div class="xs-menu menu" id="mobile-menu">
+      <div id="book-search-input" role="search">
+        <input type="text" placeholder="Type to search" />
+      </div>
+      <compodoc-menu></compodoc-menu>
+    </div>
+
+    <div class="container-fluid main">
+      <div class="row main">
+        <div class="hidden-xs menu">
+          <compodoc-menu mode="normal"></compodoc-menu>
+        </div>
+        <!-- START CONTENT -->
+        <div class="content miscellaneous-variables">
+          <div class="content-data">
+            <ol class="breadcrumb">
+              <li>Miscellaneous</li>
+              <li>Variables</li>
+            </ol>
+
+            <section>
+              <h3 id="index">Index</h3>
+              <table class="table table-sm table-bordered index-table">
+                <tbody>
+                  <tr>
+                    <td class="col-md-4">
+                      <ul class="index-list">
+                        <li>
+                          <a href="#config" title=".storybook/main.ts"
+                            ><b>config</b
+                            >&nbsp;&nbsp;&nbsp;(.storybook/.../main.ts)</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#preview" title=".storybook/preview.ts"
+                            ><b>preview</b
+                            >&nbsp;&nbsp;&nbsp;(.storybook/.../preview.ts)</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#Primary"
+                            title="src/stories/ToroTable.stories.ts"
+                            ><b>Primary</b
+                            >&nbsp;&nbsp;&nbsp;(src/.../ToroTable.stories.ts)</a
+                          >
+                        </li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <h3>.storybook/main.ts</h3>
+            <section>
+              <h3></h3>
+              <table class="table table-sm table-bordered">
+                <tbody>
+                  <tr>
+                    <td class="col-md-4">
+                      <a name="config"></a>
+                      <span class="name">
+                        <span><b>config</b></span>
+                        <a href="#config"
+                          ><span class="icon ion-ios-link"></span
+                        ></a>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-4">
+                      <i>Type : </i> <code>StorybookConfig</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-4">
+                      <i>Default value : </i
+                      ><code
+                        >{ stories: [&#x27;../src/**/*.mdx&#x27;,
+                        &#x27;../src/**/*.stories.@(js|jsx|ts|tsx)&#x27;],
+                        addons: [ &#x27;@storybook/addon-links&#x27;,
+                        &#x27;@storybook/addon-essentials&#x27;,
+                        &#x27;@storybook/addon-interactions&#x27;, ], framework:
+                        { name: &#x27;@storybook/angular&#x27;, options: {}, },
+                        core: { builder: &#x27;webpack5&#x27;, disableTelemetry:
+                        true, // 👈 Disables telemetry enableCrashReports:
+                        false, }, docs: { autodocs: &#x27;tag&#x27;, }, }</code
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <h3>.storybook/preview.ts</h3>
+            <section>
+              <h3></h3>
+              <table class="table table-sm table-bordered">
+                <tbody>
+                  <tr>
+                    <td class="col-md-4">
+                      <a name="preview"></a>
+                      <span class="name">
+                        <span><b>preview</b></span>
+                        <a href="#preview"
+                          ><span class="icon ion-ios-link"></span
+                        ></a>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-4">
+                      <i>Type : </i> <code>Preview</code>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-4">
+                      <i>Default value : </i
+                      ><code
+                        >{ parameters: { actions: { argTypesRegex:
+                        &#x27;^on[A-Z].*&#x27; }, controls: { matchers: { color:
+                        /(background|color)$/i, date: /Date$/, }, }, }, }</code
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <h3>src/stories/ToroTable.stories.ts</h3>
+            <section>
+              <h3></h3>
+              <table class="table table-sm table-bordered">
+                <tbody>
+                  <tr>
+                    <td class="col-md-4">
+                      <a name="Primary"></a>
+                      <span class="name">
+                        <span><b>Primary</b></span>
+                        <a href="#Primary"
+                          ><span class="icon ion-ios-link"></span
+                        ></a>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-4"><i>Type : </i> <code>Story</code></td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-4">
+                      <i>Default value : </i
+                      ><code
+                        >(args) &#x3D;&gt; ({ props: args, template:
+                        &#x60;&lt;app-toro-table&gt;&lt;/app-toro-table&gt;&#x60;,
+                        })</code
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </div>
+          <div class="search-results">
+            <div class="has-results">
+              <h1 class="search-results-title">
+                <span class="search-results-count"></span> results matching
+                "<span class="search-query"></span>"
+              </h1>
+              <ul class="search-results-list"></ul>
+            </div>
+            <div class="no-results">
+              <h1 class="search-results-title">
+                No results matching "<span class="search-query"></span>"
+              </h1>
+            </div>
+          </div>
+        </div>
+        <!-- END CONTENT -->
+      </div>
+    </div>
+
+    <label class="dark-mode-switch">
+      <input type="checkbox" />
+      <span class="slider">
+        <svg
+          class="slider-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          height="20"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+        </svg>
+      </span>
+    </label>
+
+    <script>
+      var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+      var COMPODOC_CURRENT_PAGE_CONTEXT = "miscellaneous-variables";
+      var COMPODOC_CURRENT_PAGE_URL = "variables.html";
+      var MAX_SEARCH_RESULTS = 15;
+    </script>
+
+    <script src="../js/libs/custom-elements.min.js"></script>
+    <script src="../js/libs/lit-html.js"></script>
+
+    <script src="../js/menu-wc.js" defer></script>
+    <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+    <script src="../js/libs/bootstrap-native.js"></script>
+
+    <script src="../js/libs/es6-shim.min.js"></script>
+    <script src="../js/libs/EventDispatcher.js"></script>
+    <script src="../js/libs/promise.min.js"></script>
+    <script src="../js/libs/zepto.min.js"></script>
+
+    <script src="../js/compodoc.js"></script>
+
+    <script src="../js/tabs.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/libs/clipboard.min.js"></script>
+    <script src="../js/libs/prism.js"></script>
+    <script src="../js/sourceCode.js"></script>
+    <script src="../js/search/search.js"></script>
+    <script src="../js/search/lunr.min.js"></script>
+    <script src="../js/search/search-lunr.js"></script>
+    <script src="../js/search/search_index.js"></script>
+    <script src="../js/lazy-load-graphs.js"></script>
+  </body>
+</html>

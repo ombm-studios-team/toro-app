@@ -22,8 +22,6 @@
     ".angular/cache": true,
     ".angular": true,
     ".storybook": true,
-    ".husky": true,
-    "storybook-static": true,
     ".eslintignore": true,
     ".prettierrc": true
   },
@@ -44,8 +42,6 @@
     ".angular/cache",
     ".angular",
     ".storybook",
-    ".husky",
-    "storybook-static",
     ".eslintignore",
     ".prettierrc"
   ],

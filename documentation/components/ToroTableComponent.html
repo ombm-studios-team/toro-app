@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>toro-app documentation</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/dark.css" />
+  </head>
+
+  <body>
+    <div class="navbar navbar-default navbar-fixed-top visible-xs">
+      <a href="../" class="navbar-brand">toro-app documentation</a>
+      <button
+        type="button"
+        class="btn btn-default btn-menu ion-ios-menu"
+        id="btn-menu"
+      ></button>
+    </div>
+
+    <div class="xs-menu menu" id="mobile-menu">
+      <div id="book-search-input" role="search">
+        <input type="text" placeholder="Type to search" />
+      </div>
+      <compodoc-menu></compodoc-menu>
+    </div>
+
+    <div class="container-fluid main">
+      <div class="row main">
+        <div class="hidden-xs menu">
+          <compodoc-menu mode="normal"></compodoc-menu>
+        </div>
+        <!-- START CONTENT -->
+        <div class="content component">
+          <div class="content-data">
+            <ol class="breadcrumb">
+              <li>Components</li>
+              <li>ToroTableComponent</li>
+            </ol>
+
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="active">
+                <a
+                  href="#info"
+                  role="tab"
+                  id="info-tab"
+                  data-toggle="tab"
+                  data-link="info"
+                  >Info</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#source"
+                  role="tab"
+                  id="source-tab"
+                  data-toggle="tab"
+                  data-link="source"
+                  >Source</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#templateData"
+                  role="tab"
+                  id="templateData-tab"
+                  data-toggle="tab"
+                  data-link="template"
+                  >Template</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#styleData"
+                  role="tab"
+                  id="styleData-tab"
+                  data-toggle="tab"
+                  data-link="style"
+                  >Styles</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#tree"
+                  role="tab"
+                  id="tree-tab"
+                  data-toggle="tab"
+                  data-link="dom-tree"
+                  >DOM Tree</a
+                >
+              </li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane fade active in" id="c-info">
+                <p class="comment"></p>
+                <h3>File</h3>
+                <p class="comment">
+                  <code
+                    >src/app/components/toro-table/toro-table.component.ts</code
+                  >
+                </p>
+
+                <section>
+                  <h3>Metadata</h3>
+                  <table class="table table-sm table-hover metadata">
+                    <tbody>
+                      <tr>
+                        <td class="col-md-3">providers</td>
+                        <td class="col-md-9">
+                          <code
+                            ><a
+                              href="../injectables/PopulationService.html"
+                              target="_self"
+                              >PopulationService</a
+                            ></code
+                          >
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="col-md-3">selector</td>
+                        <td class="col-md-9"><code>app-toro-table</code></td>
+                      </tr>
+
+                      <tr>
+                        <td class="col-md-3">styleUrls</td>
+                        <td class="col-md-9">
+                          <code>./toro-table.component.css</code>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="col-md-3">templateUrl</td>
+                        <td class="col-md-9">
+                          <code>./toro-table.component.html</code>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </section>
+
+                <section>
+                  <h3 id="index">Index</h3>
+                  <table class="table table-sm table-bordered index-table">
+                    <tbody>
+                      <tr>
+                        <td class="col-md-4">
+                          <h6><b>Properties</b></h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4">
+                          <ul class="index-list">
+                            <li>
+                              <a href="#dataSource">dataSource</a>
+                            </li>
+                            <li>
+                              <a href="#displayedColumns">displayedColumns</a>
+                            </li>
+                            <li>
+                              <a href="#populationList">populationList</a>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="col-md-4">
+                          <h6><b>Methods</b></h6>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4">
+                          <ul class="index-list">
+                            <li>
+                              <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                          </ul>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </section>
+
+                <section>
+                  <h3 id="constructor">Constructor</h3>
+                  <table class="table table-sm table-bordered">
+                    <tbody>
+                      <tr>
+                        <td class="col-md-4">
+                          <code
+                            >constructor(populationService:
+                            <a
+                              href="../injectables/PopulationService.html"
+                              target="_self"
+                              >PopulationService</a
+                            >)</code
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4">
+                          <div class="io-line">
+                            Defined in
+                            <a href="" data-line="22" class="link-to-prism"
+                              >src/app/components/toro-table/toro-table.component.ts:22</a
+                            >
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="col-md-4">
+                          <div>
+                            <b>Parameters :</b>
+                            <table class="params">
+                              <thead>
+                                <tr>
+                                  <td>Name</td>
+                                  <td>Type</td>
+                                  <td>Optional</td>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>populationService</td>
+
+                                  <td>
+                                    <code
+                                      ><a
+                                        href="../injectables/PopulationService.html"
+                                        target="_self"
+                                        >PopulationService</a
+                                      ></code
+                                    >
+                                  </td>
+
+                                  <td>No</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </section>
+
+                <section>
+                  <h3 id="methods">Methods</h3>
+                  <table class="table table-sm table-bordered">
+                    <tbody>
+                      <tr>
+                        <td class="col-md-4">
+                          <a name="ngOnInit"></a>
+                          <span class="name">
+                            <span><b>ngOnInit</b></span>
+                            <a href="#ngOnInit"
+                              ><span class="icon ion-ios-link"></span
+                            ></a>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4">
+                          <code>ngOnInit()</code>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="col-md-4">
+                          <div class="io-line">
+                            Defined in
+                            <a href="" data-line="25" class="link-to-prism"
+                              >src/app/components/toro-table/toro-table.component.ts:25</a
+                            >
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="col-md-4">
+                          <div class="io-description">
+                            <b>Returns : </b>
+                            <code
+                              ><a
+                                href="https://www.typescriptlang.org/docs/handbook/basic-types.html"
+                                target="_blank"
+                                >void</a
+                              ></code
+                            >
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </section>
+                <section>
+                  <h3 id="inputs">Properties</h3>
+                  <table class="table table-sm table-bordered">
+                    <tbody>
+                      <tr>
+                        <td class="col-md-4">
+                          <a name="dataSource"></a>
+                          <span class="name">
+                            <span><b>dataSource</b></span>
+                            <a href="#dataSource"
+                              ><span class="icon ion-ios-link"></span
+                            ></a>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4"><i>Type : </i> <code>[]</code></td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4">
+                          <i>Default value : </i><code>[]</code>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4">
+                          <div class="io-line">
+                            Defined in
+                            <a href="" data-line="14" class="link-to-prism"
+                              >src/app/components/toro-table/toro-table.component.ts:14</a
+                            >
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="table table-sm table-bordered">
+                    <tbody>
+                      <tr>
+                        <td class="col-md-4">
+                          <a name="displayedColumns"></a>
+                          <span class="name">
+                            <span><b>displayedColumns</b></span>
+                            <a href="#displayedColumns"
+                              ><span class="icon ion-ios-link"></span
+                            ></a>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4">
+                          <i>Type : </i> <code>string[]</code>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4">
+                          <i>Default value : </i
+                          ><code
+                            >[ &#x27;id_nation&#x27;, &#x27;nation&#x27;,
+                            &#x27;id_year&#x27;, &#x27;year&#x27;,
+                            &#x27;population&#x27;, &#x27;slug_nation&#x27;,
+                            ]</code
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4">
+                          <div class="io-line">
+                            Defined in
+                            <a href="" data-line="15" class="link-to-prism"
+                              >src/app/components/toro-table/toro-table.component.ts:15</a
+                            >
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="table table-sm table-bordered">
+                    <tbody>
+                      <tr>
+                        <td class="col-md-4">
+                          <a name="populationList"></a>
+                          <span class="name">
+                            <span><b>populationList</b></span>
+                            <a href="#populationList"
+                              ><span class="icon ion-ios-link"></span
+                            ></a>
+                          </span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4">
+                          <i>Type : </i>
+                          <code
+                            ><a
+                              href="../interfaces/IPopulationInfo.html"
+                              target="_self"
+                              >IPopulationInfo[]</a
+                            ></code
+                          >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4">
+                          <i>Default value : </i><code>[]</code>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="col-md-4">
+                          <div class="io-line">
+                            Defined in
+                            <a href="" data-line="13" class="link-to-prism"
+                              >src/app/components/toro-table/toro-table.component.ts:13</a
+                            >
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </section>
+              </div>
+
+              <div class="tab-pane fade tab-source-code" id="c-source">
+                <pre
+                  class="line-numbers compodoc-sourcecode"
+                ><code class="language-typescript">import { ChangeDetectionStrategy, Component, OnInit } from &#x27;@angular/core&#x27;;
+
+import { IPopulationInfo } from &#x27;../../models/ipopulation-info&#x27;;
+import { PopulationService } from &#x27;../../services/population.service&#x27;;
+
+@Component({
+  selector: &#x27;app-toro-table&#x27;,
+  templateUrl: &#x27;./toro-table.component.html&#x27;,
+  styleUrls: [&#x27;./toro-table.component.css&#x27;],
+  providers: [PopulationService],
+})
+export class ToroTableComponent {
+  populationList: IPopulationInfo[] &#x3D; [];
+  dataSource &#x3D; [];
+  displayedColumns: string[] &#x3D; [
+    &#x27;id_nation&#x27;,
+    &#x27;nation&#x27;,
+    &#x27;id_year&#x27;,
+    &#x27;year&#x27;,
+    &#x27;population&#x27;,
+    &#x27;slug_nation&#x27;,
+  ];
+  constructor(private populationService: PopulationService) {}
+
+  ngOnInit() {
+    this.populationService.getPopulationInfo().subscribe(
+      (data) &#x3D;&gt; (this.dataSource &#x3D; data),
+      (error) &#x3D;&gt; {
+        throw Error(error);
+      }
+    );
+  }
+}
+</code></pre>
+              </div>
+
+              <div class="tab-pane fade" id="c-templateData">
+                <pre
+                  class="line-numbers"
+                ><code class="language-html">&lt;div class&#x3D;&quot;content&quot; role&#x3D;&quot;main&quot;&gt;
+  &lt;table mat-table [dataSource]&#x3D;&quot;dataSource&quot; class&#x3D;&quot;mat-elevation-z8&quot;&gt;
+    &lt;!-- ID Nation Column --&gt;
+    &lt;ng-container matColumnDef&#x3D;&quot;id_nation&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef&gt;ID Nation&lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element[&quot;ID Nation&quot;] }}&lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;!-- Nation Column --&gt;
+    &lt;ng-container matColumnDef&#x3D;&quot;nation&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef&gt;Nation&lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.Nation }}&lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;!-- ID Year Column --&gt;
+    &lt;ng-container matColumnDef&#x3D;&quot;id_year&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef&gt;ID Year&lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element[&quot;ID Year&quot;] }}&lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;!-- Year Column --&gt;
+    &lt;ng-container matColumnDef&#x3D;&quot;year&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef&gt;Year&lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.Year }}&lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;!-- Population Column --&gt;
+    &lt;ng-container matColumnDef&#x3D;&quot;population&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef&gt;Population&lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element.Population }}&lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;!-- Slug Nation Column --&gt;
+    &lt;ng-container matColumnDef&#x3D;&quot;slug_nation&quot;&gt;
+      &lt;th mat-header-cell *matHeaderCellDef&gt;Slug Nation&lt;/th&gt;
+      &lt;td mat-cell *matCellDef&#x3D;&quot;let element&quot;&gt;{{ element[&quot;Slug Nation&quot;] }}&lt;/td&gt;
+    &lt;/ng-container&gt;
+
+    &lt;tr mat-header-row *matHeaderRowDef&#x3D;&quot;displayedColumns&quot;&gt;&lt;/tr&gt;
+    &lt;tr mat-row *matRowDef&#x3D;&quot;let row; columns: displayedColumns&quot;&gt;&lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+              </div>
+
+              <div class="tab-pane fade" id="c-styleData">
+                <p class="comment">
+                  <code>./toro-table.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">:host {
+  font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica,
+    Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 8px;
+}
+
+.toolbar #youtube-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+  opacity: 0.8;
+}
+
+.content {
+  display: flex;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+svg.material-icons {
+  height: 24px;
+  width: auto;
+}
+
+svg.material-icons:not(:last-child) {
+  margin-right: 8px;
+}
+
+.card svg.material-icons path {
+  fill: #888;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.card {
+  all: unset;
+  border-radius: 4px;
+  border: 1px solid #eee;
+  background-color: #fafafa;
+  height: 40px;
+  width: 200px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+
+.card-container .card:not(:last-child) {
+  margin-right: 0;
+}
+
+.card.card-small {
+  height: 16px;
+  width: 168px;
+}
+
+.card-container .card:not(.highlight-card) {
+  cursor: pointer;
+}
+
+.card-container .card:not(.highlight-card):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
+}
+
+.card-container .card:not(.highlight-card):hover .material-icons path {
+  fill: rgb(105, 103, 103);
+}
+
+.card.highlight-card {
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+  border: none;
+  width: auto;
+  min-width: 30%;
+  position: relative;
+}
+
+.card.card.highlight-card span {
+  margin-left: 60px;
+}
+
+svg#rocket {
+  width: 80px;
+  position: absolute;
+  left: -10px;
+  top: -24px;
+}
+
+svg#rocket-smoke {
+  height: calc(100vh - 95px);
+  position: absolute;
+  top: 10px;
+  right: 180px;
+  z-index: -10;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #125699;
+}
+
+.terminal {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 6px;
+  padding-top: 45px;
+  margin-top: 8px;
+  overflow: hidden;
+  background-color: rgb(15, 15, 16);
+}
+
+.terminal::before {
+  content: &quot;\2022 \2022 \2022&quot;;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  background: rgb(58, 58, 58);
+  color: #c2c3c4;
+  width: 100%;
+  font-size: 2rem;
+  line-height: 0;
+  padding: 14px 0;
+  text-indent: 4px;
+}
+
+.terminal pre {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  color: white;
+  padding: 0 1rem 1rem;
+  margin: 0;
+}
+
+.circle-link {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  margin: 8px;
+  background-color: white;
+  border: 1px solid #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: 1s ease-out;
+}
+
+.circle-link:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
+
+.github-star-badge {
+  color: #24292e;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 3px 10px;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 3px;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+  margin-left: 4px;
+  font-weight: 600;
+}
+
+.github-star-badge:hover {
+  background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+  border-color: rgba(27, 31, 35, 0.35);
+  background-position: -0.5em;
+}
+
+.github-star-badge .material-icons {
+  height: 16px;
+  width: 16px;
+  margin-right: 4px;
+}
+
+svg#clouds {
+  position: fixed;
+  bottom: -160px;
+  left: -230px;
+  z-index: -10;
+  width: 1920px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+  .card-container &gt; *:not(.circle-link),
+  .terminal {
+    width: 100%;
+  }
+
+  .card:not(.highlight-card) {
+    height: 16px;
+    margin: 8px 0;
+  }
+
+  .card.highlight-card span {
+    margin-left: 72px;
+  }
+
+  svg#rocket-smoke {
+    right: 120px;
+    transform: rotate(-5deg);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  svg#rocket-smoke {
+    display: none;
+    visibility: hidden;
+  }
+}
+</code></pre>
+              </div>
+
+              <div class="tab-pane fade" id="c-tree">
+                <div id="tree-container"></div>
+                <div class="tree-legend">
+                  <div class="title">
+                    <b>Legend</b>
+                  </div>
+                  <div>
+                    <div class="color htmlelement"></div>
+                    <span>Html element</span>
+                  </div>
+                  <div>
+                    <div class="color component"></div>
+                    <span>Component</span>
+                  </div>
+                  <div>
+                    <div class="color directive"></div>
+                    <span>Html element with directive</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <script src="../js/libs/vis.min.js"></script>
+            <script src="../js/libs/htmlparser.js"></script>
+            <script src="../js/libs/deep-iterator.js"></script>
+            <script>
+              var COMPONENT_TEMPLATE =
+                '<div><div class="content" role="main">  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">    <!-- ID Nation Column -->    <ng-container matColumnDef="id_nation">      <th mat-header-cell *matHeaderCellDef>ID Nation</th>      <td mat-cell *matCellDef="let element">{{ element["ID Nation"] }}</td>    </ng-container>    <!-- Nation Column -->    <ng-container matColumnDef="nation">      <th mat-header-cell *matHeaderCellDef>Nation</th>      <td mat-cell *matCellDef="let element">{{ element.Nation }}</td>    </ng-container>    <!-- ID Year Column -->    <ng-container matColumnDef="id_year">      <th mat-header-cell *matHeaderCellDef>ID Year</th>      <td mat-cell *matCellDef="let element">{{ element["ID Year"] }}</td>    </ng-container>    <!-- Year Column -->    <ng-container matColumnDef="year">      <th mat-header-cell *matHeaderCellDef>Year</th>      <td mat-cell *matCellDef="let element">{{ element.Year }}</td>    </ng-container>    <!-- Population Column -->    <ng-container matColumnDef="population">      <th mat-header-cell *matHeaderCellDef>Population</th>      <td mat-cell *matCellDef="let element">{{ element.Population }}</td>    </ng-container>    <!-- Slug Nation Column -->    <ng-container matColumnDef="slug_nation">      <th mat-header-cell *matHeaderCellDef>Slug Nation</th>      <td mat-cell *matCellDef="let element">{{ element["Slug Nation"] }}</td>    </ng-container>    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>  </table></div></div>';
+              var COMPONENTS = [
+                { name: "AppComponent", selector: "app-root" },
+                { name: "ToroTableComponent", selector: "app-toro-table" },
+              ];
+              var DIRECTIVES = [];
+              var ACTUAL_COMPONENT = { name: "ToroTableComponent" };
+            </script>
+            <script src="../js/tree.js"></script>
+          </div>
+          <div class="search-results">
+            <div class="has-results">
+              <h1 class="search-results-title">
+                <span class="search-results-count"></span> results matching
+                "<span class="search-query"></span>"
+              </h1>
+              <ul class="search-results-list"></ul>
+            </div>
+            <div class="no-results">
+              <h1 class="search-results-title">
+                No results matching "<span class="search-query"></span>"
+              </h1>
+            </div>
+          </div>
+        </div>
+        <!-- END CONTENT -->
+      </div>
+    </div>
+
+    <label class="dark-mode-switch">
+      <input type="checkbox" />
+      <span class="slider">
+        <svg
+          class="slider-icon"
+          viewBox="0 0 24 24"
+          fill="none"
+          height="20"
+          stroke="#000"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          width="20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+        </svg>
+      </span>
+    </label>
+
+    <script>
+      var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+      var COMPODOC_CURRENT_PAGE_CONTEXT = "component";
+      var COMPODOC_CURRENT_PAGE_URL = "ToroTableComponent.html";
+      var MAX_SEARCH_RESULTS = 15;
+    </script>
+
+    <script src="../js/libs/custom-elements.min.js"></script>
+    <script src="../js/libs/lit-html.js"></script>
+
+    <script src="../js/menu-wc.js" defer></script>
+    <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+    <script src="../js/libs/bootstrap-native.js"></script>
+
+    <script src="../js/libs/es6-shim.min.js"></script>
+    <script src="../js/libs/EventDispatcher.js"></script>
+    <script src="../js/libs/promise.min.js"></script>
+    <script src="../js/libs/zepto.min.js"></script>
+
+    <script src="../js/compodoc.js"></script>
+
+    <script src="../js/tabs.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/libs/clipboard.min.js"></script>
+    <script src="../js/libs/prism.js"></script>
+    <script src="../js/sourceCode.js"></script>
+    <script src="../js/search/search.js"></script>
+    <script src="../js/search/lunr.min.js"></script>
+    <script src="../js/search/search-lunr.js"></script>
+    <script src="../js/search/search_index.js"></script>
+    <script src="../js/lazy-load-graphs.js"></script>
+  </body>
+</html>
