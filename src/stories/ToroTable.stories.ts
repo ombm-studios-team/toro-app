@@ -1,17 +1,17 @@
-// AppComponent.stories.ts
+// ToroTableComponent.stories.ts
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AppComponent } from '../app/app.component';
+import { ToroTableComponent } from '../app/components/toro-table/toro-table.component';
 import { MatTableModule } from '@angular/material/table';
 
 export default {
-  component: AppComponent,
+  component: ToroTableComponent,
   decorators: [
     moduleMetadata({
-      declarations: [AppComponent],
+      declarations: [ToroTableComponent],
       imports: [
         CommonModule,
         BrowserAnimationsModule,
@@ -24,9 +24,9 @@ export default {
 
 export const Primary: Story = (args) => ({
   props: args,
-  template: `<app-root></app-root>`,
+  template: `<app-toro-table></app-toro-table>`,
 });
 Primary.args = {
-  label: 'AppComponent',
+  label: 'ToroTableComponent',
   primary: true,
 };
