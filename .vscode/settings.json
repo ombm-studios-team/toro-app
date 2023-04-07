@@ -51,6 +51,6 @@
     ".eslintignore",
     ".prettierrc"
   ],
-  "conventionalCommits.scopes": ["services", "global"],
+  "conventionalCommits.scopes": ["services", "global", "storybook"],
   "cSpell.words": ["ipopulation"]
 }
