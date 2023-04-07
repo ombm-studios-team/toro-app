@@ -2,10 +2,10 @@ import { NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ToroTableComponent } from './toro-table.component';
-import { PopulationService } from './services/population.service';
+import { PopulationService } from '../../services/population.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { Observable, of } from 'rxjs';
-import { IPopulationInfo } from './models/ipopulation-info';
+import { IPopulationInfo } from '../../models/ipopulation-info';
 
 describe('ToroTableComponent', () => {
   let component: ToroTableComponent;
