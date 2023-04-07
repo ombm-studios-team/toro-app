@@ -10,11 +10,11 @@ import {
 import { MatTableModule } from '@angular/material/table';
 
 import { AppComponent } from './app.component';
-
 import { PopulationService } from './services/population.service';
+import { ToroTableComponent } from './components/toro-table/toro-table.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ToroTableComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
