@@ -7,7 +7,6 @@ import { PopulationService } from '../../services/population.service';
   selector: 'app-toro-table',
   templateUrl: './toro-table.component.html',
   styleUrls: ['./toro-table.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [PopulationService],
 })
 export class ToroTableComponent {

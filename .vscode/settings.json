@@ -8,7 +8,6 @@
     "**/Thumbs.db": true,
     "node_modules": true,
     ".vscode": true,
-    "src/assets": true,
     "src/favicon.ico": true,
     "src/main.ts": true,
     "tsconfig.app.json": true,
@@ -31,7 +30,6 @@
   "hide-files.files": [
     "node_modules",
     ".vscode",
-    "src/assets",
     "src/favicon.ico",
     "src/main.ts",
     "tsconfig.app.json",
